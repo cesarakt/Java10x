@@ -17,6 +17,8 @@ public class Main {
         Sasuke.idade = 18;
         Sasuke.aldeia = "Aldeia da folha";
         Sasuke.ativarSharingan();
+        Sasuke.inteligenciaDeCombate();
+        Sasuke.inteligenciaDeCombate(150);
 
         //Criar ninja Hinata Hyuuga
         Hyuuga Hinata = new Hyuuga();
@@ -24,6 +26,14 @@ public class Main {
         Hinata.aldeia = "Aldeia da folha";
         Hinata.idade = 18;
         Hinata.ativarByakugan();
+
+        Uchiha Madara = new Uchiha(
+                "Madara",
+                40,
+                "Folha",
+                20,
+                NivelNinja.HOKAGE
+        );
 
         //Criar ninja Boruto Uzumaki Hyuuga
         Boruto Boruto = new Boruto();

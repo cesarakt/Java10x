@@ -1,23 +1,26 @@
-package Intermediario;
+package Intermediario.HerancasMultiplas;
 
-import Intermediario.HerancasMultiplas.ISharingan;
-
-public class Uchiha extends Ninja implements ISharingan {
-    public Uchiha() {
+public class Hatake extends Ninja implements ISharingan, IAnbu {
+    public Hatake() {
         super();
     }
 
-    public Uchiha(String nome, int idade, String aldeia ){
+    public Hatake(String nome, int idade, String aldeia ){
         super(nome, idade, aldeia);
     }
 
-    public Uchiha(String nome, int idade, String aldeia, int numeroDeMissoesConcluidas, NivelNinja rank) {
-        super(nome, idade, aldeia, numeroDeMissoesConcluidas, rank);
+    public void boasVindas(){
+        System.out.println("Eu "+ nome +" sou um hatake.");
     }
 
     @Override
     public void ativarSharingan() {
         System.out.println("Meu nome é "+nome+" o Sharingan foi ativado! Eu sou um uchiha");
+    }
+
+    @Override
+    public void ninjaDeElite() {
+        System.out.println("Eu " + nome + " sou um ninja de elite.");
     }
 
     @Override

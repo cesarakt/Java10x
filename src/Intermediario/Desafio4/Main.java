@@ -6,7 +6,11 @@ public class Main {
         Ninja.mostrarInformacoes();
         Ninja.executarHabilidade();
 
-        NinjaAvancado NarutoShippuden = new NinjaAvancado("Naruto Uzumaki",16,"Racinshuriken", NinjaAvancado.TipoEspecialidade.NINJUTSU);
+        NinjaAvancado NarutoShippuden = new NinjaAvancado(
+                "Naruto Uzumaki",
+                16,
+                "Racinshuriken",
+                NinjaAvancado.TipoEspecialidade.NINJUTSU);
         NarutoShippuden.mostrarInformacoes();
         NarutoShippuden.executarHabilidade();
     }

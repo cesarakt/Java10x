@@ -1,6 +1,6 @@
 package Intermediario.Desafio4;
 
-public class NinjaBasico implements Ninja {
+public class NinjaBasico implements INinja {
     String nome;
     int idade;
     String habilidade;

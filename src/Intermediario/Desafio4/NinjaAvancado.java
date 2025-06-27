@@ -1,6 +1,6 @@
 package Intermediario.Desafio4;
 
-public class NinjaAvancado extends NinjaBasico implements Ninja{
+public class NinjaAvancado extends NinjaBasico implements INinja{
     public enum TipoEspecialidade {
         NINJUTSU,
         TAIJUTSU,

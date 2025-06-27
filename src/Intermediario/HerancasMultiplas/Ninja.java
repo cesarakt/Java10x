@@ -1,4 +1,8 @@
-package Intermediario;
+package Intermediario.HerancasMultiplas;
+
+import Intermediario.IClasseNinja;
+import Intermediario.IEstrategiaDeCombate;
+import Intermediario.NivelNinja;
 
 public abstract class Ninja implements IEstrategiaDeCombate, IClasseNinja {
     //TODO: Criar 2 novos atributos : numeroDeMissoesConcluidas , rank
@@ -36,22 +40,5 @@ public abstract class Ninja implements IEstrategiaDeCombate, IClasseNinja {
     @Override
     public void ativarClasseNinja(){
         System.out.println("Eu ativei minha classe ninja");
-    }
-
-    @Override
-    public void inteligenciaDeCombate() {
-        System.out.println("Essa é minha inteligencia de combate");
-    }
-
-    //Sobrecarga de metodos (Overload)
-    @Override
-    public void inteligenciaDeCombate(int qi) {
-        if (qi > 150) {
-            System.out.println("Seu qi é " +qi+ " você é um gênio.");
-        } else if (qi >= 130) {
-            System.out.println("Seu qi é " +qi+ " você é um ninja promissor.");
-        } else {
-            System.out.println("Seu qi é " +qi+ " você precisa treinar mais.");
-        }
     }
 }
