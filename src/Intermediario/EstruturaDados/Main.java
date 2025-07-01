@@ -14,7 +14,7 @@ public class Main {
 
         System.out.println("------ LIST ------");
         //List
-        //São dinâmicas e tamanho aumenta e diminui conforme preciso
+        //São dinâmicas e tamanho aumenta e diminui conforme preciso , geralmente lentas para adicionar ou remover elementos.
         List<String> listString = new ArrayList<>();
         listString.add("Naruto Uzumaki");
         System.out.println(listString);
@@ -57,5 +57,18 @@ public class Main {
         if (fila.isEmpty()) {
             System.out.println("A fila está vazia");
         };
+
+        System.out.println("-------SET-------");
+        //Set - São usados para listas que ignoram valores duplicados, porém não contem ordenação (indices)
+        //Usa-se quando não se importa com ordenação e valores duplicados
+        Set<String> ninjas = new HashSet<>();
+        ninjas.add("Naruto Uzumaki");
+        ninjas.add("Sasuke Uchiha");
+        ninjas.add("Kakashi Hatake");
+        ninjas.add("Naruto Uzumaki");
+        System.out.println(ninjas);
+
+        //TreeSet ele ordena a lista de acordo com o tipo usado, ex: String(Alfabetica),Integer(Numerica)...
+        //LinkedHashSet ordena os itens da lista com base na ordem de implementação do item
     }
 }
